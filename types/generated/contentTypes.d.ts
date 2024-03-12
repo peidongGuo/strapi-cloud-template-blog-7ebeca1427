@@ -979,6 +979,7 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
     singularName: 'question';
     pluralName: 'questions';
     displayName: 'question';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -986,6 +987,7 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     uuid: Attribute.UID;
+    code: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
